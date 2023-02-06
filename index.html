@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body {
+            background-color: rgb(250, 239, 29);
+        }
+        
+        button {
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: rgb(0, 0, 0);
+            padding: 10px 24px;
+            font-size: 16px;
+            margin: 30px auto;
+        }
+        
+        button:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .content {
+            width: 800px;
+            margin: 30px auto;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        
+        #minutes,
+        #seconds,
+        #tens {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>STOPWATCH</h1>
+        <span id="minutes">00</span>:<span id="seconds">00</span>:
+        <span id="tens">00</span><br>
+        <button type="button" id="button-start">Start</button>
+        <button type="button" id="button-stop">Stop</button>
+        <button type="button" id="button-reset">Reset</button>
+    </div>
+
+</body>
+<script src="stopwatch.js">
+</script>
+
+</html>
